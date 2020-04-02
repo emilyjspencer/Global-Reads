@@ -9,6 +9,7 @@ class ReviewsController < ApplicationController
 
     def create
         @review = Review.new(review_requirements)
+        @review.user = User.first
         if @review.save
           flash[:success] = "Your review was successfully created"
           redirect_to reviews_path(@review)
@@ -19,7 +20,7 @@ class ReviewsController < ApplicationController
 
     def show
     end
-
+\\
     def index
         @reviews = Review.all
     end
