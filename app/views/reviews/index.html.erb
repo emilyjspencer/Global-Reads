@@ -8,6 +8,9 @@
      <%= link_to review.title, review_path(review) %>
     </div>
     <div class="review-body">
+      <small>Created by: <%= review.user.username if review.user %>,
+      <%= time_ago_in_words(review.created_at) %> ago,
+      last updated: <%= time_ago_in_words(review.updated_at) %> ago</small>
      <%= truncate(review.review, length: 100) %>
     </div>
     <div class="review-actions">
