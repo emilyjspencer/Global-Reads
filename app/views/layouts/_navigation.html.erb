@@ -1,6 +1,5 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -10,12 +9,18 @@
       </button>
          
       <%= link_to "Global Reads", root_path, class: "navbar-brand", id: "logo" %>
-         
+      <%= link_to "West Asian reads", westasia_path %>
+      <%= link_to "East Asian reads", eastasia_path %>
+     <%= link_to "South and South East Asian reads", southandsoutheastasia_path %>
+     <%= link_to "European Reads", europe_path %>
+      <%= link_to "African-American Reads", africanamerican_path %>
+      <%= link_to "South and Central American Reads", southandcentralamerica_path %>
+      <%= link_to "North, South and Central African Reads", northsouthandcentralafrica_path %>
+      <%= link_to "East and West Africa Reads", eastandwestafrica_path %>
+      <%= link_to "Caribbean Reads", caribbean_path %>
 
-      <a class="navbar-brand" href="#">Brand</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       <li><%= link_to "Reviews", reviews_path %></li>

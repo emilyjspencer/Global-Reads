@@ -4,7 +4,6 @@
     <title>Globalreads</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= render 'layouts/navigation' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,7 +11,7 @@
   <body>
     <%= render 'layouts/navigation' %>
     <%= render 'shared/messages' %>
-    <%= render 'shared/errors' %>
+    
     <%= yield %>
   </body>
 </html>
