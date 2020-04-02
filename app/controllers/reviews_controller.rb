@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
 
     def show
     end
-\\
+
     def index
         @reviews = Review.all
     end
