@@ -36,6 +36,13 @@ class ReviewsController < ApplicationController
         end
       end
 
+      def destroy
+        @review = Review.find(params[:id])
+        @review.destroy
+        flash[:notice] = "Your review deleted"
+        redirect_to reviews_path
+       end
+
     
 
 
