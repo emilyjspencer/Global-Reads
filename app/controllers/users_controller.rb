@@ -5,6 +5,12 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_credentials)
+       if @user.save
+         flash[:success] = "Welcome to the Global Reads #{@user.username}"
+         redirect_to reviews_path
+       else
+         render 'new'
+       end
     end
 
 
