@@ -7,4 +7,11 @@
   <%= gravatar_for @user %>
  </div>
 </div>
+
 <h4 align="center"><%= @user.username %>'s reviews</h4>
+
+<%= render 'shared/review', obj: @user.reviews %>
+
+<div align="center">
+ <%= will_paginate @user_articles %>
+</div>

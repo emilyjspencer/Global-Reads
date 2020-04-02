@@ -1,5 +1,9 @@
 <h1 align="center">Showing all reviews</h1>
 
+<div align="center">
+ <%= will_paginate %>
+</div>
+
 <% @reviews.each do |review| %>
  <div class="row">
   <div class="col-xs-8 col-xs-offset-2">
