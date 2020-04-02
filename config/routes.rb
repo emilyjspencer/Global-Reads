@@ -23,6 +23,9 @@ Rails.application.routes.draw do
 
   delete 'logout', to: 'sessions#destroy'
 
+  get 'chat', to: 'chat#show'
+  
+
   resources :users, except: [:new]
 
   resources :reviews
