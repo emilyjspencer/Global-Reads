@@ -4,4 +4,16 @@ Rails.application.routes.draw do
 
 
   get 'about', to: 'pages#about'
+
+  get 'eastasia', to: 'pages#eastasia'
+  get 'europe', to: 'pages#europe'
+  get 'westasia', to: 'pages#westasia'
+  get 'southandsoutheastasia', to: 'pages#southandsoutheastasia'
+  get 'africanamerican', to: 'pages#africanamerican'
+  get 'southandcentralamerica', to: 'pages#southandcentralamerica'
+  get 'caribbean', to: 'pages#caribbean'
+  get 'eastandwestafrica', to: 'pages#eastandwestafrica'
+  get 'northsouthandcentralafrica', to: 'pages#northsouthandcentralafrica'
+
+
 end
