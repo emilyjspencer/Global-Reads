@@ -1,4 +1,7 @@
 <h1>Showing all reviews</h1>
+<p>
+<%= link_to "Create new review", new_review_path %>
+</p>
 <table>
  <tr>
   <th>Title</th>
@@ -8,6 +11,8 @@
  <tr>
   <td><%= review.title %></td>
   <td><%= review.review %></td>
+  <td><%= link_to 'Edit', edit_review_path(review) %></td>
+  <td><%= link_to 'Show', review_path(review) %></td>
  </tr>
  <% end %>
 </table>
