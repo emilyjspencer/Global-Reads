@@ -25,6 +25,17 @@ class ReviewsController < ApplicationController
        @review = Review.find(params[:id])
     end
 
+    def update
+        @review = Review.find(params[:id])
+        if @review.update(review_requirements)
+         flash[:notice] = "Your review was successfully updated"
+         redirect_to review_path(@review)
+        else
+         flash[:notice] = "Your review was not updated"
+         render 'edit'
+        end
+      end
+
     
 
 
