@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   get 'eastandwestafrica', to: 'pages#eastandwestafrica'
   get 'northsouthandcentralafrica', to: 'pages#northsouthandcentralafrica'
 
+  resources :reviews
 
 end
