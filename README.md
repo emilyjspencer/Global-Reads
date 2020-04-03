@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+## Screenshots
+
+![southandcentralamericanreads](southamericanreads.png)
+![signup](signup.png)
+![login](login.png)
+![seeallreviews](seeallreviews.png)

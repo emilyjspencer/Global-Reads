@@ -1,6 +1,4 @@
-<% if logged_in? %>
-<% else %>
-<% end %>
+
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -15,8 +13,10 @@
       <%= link_to "Global Reads", root_path, class: "navbar-brand", id: "logo" %>
       <%= link_to "Sign Up", signup_path, class: "navbar-brand" %>
       <%= link_to "Log In", login_path, class: "navbar-brand" %>
-      
-      <%= link_to "Chat", chat_path, class: "navbar-brand" %>
+      <% if logged_in? %>
+        <% else %>
+      <% end %>
+     
       <br>
       <br>
       <br>
