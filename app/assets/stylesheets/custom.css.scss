@@ -5,6 +5,8 @@
 $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
 #logo {
  float: left;
  font-size: 1.7em;
@@ -29,13 +31,16 @@ $navbar-default-bg: black;
  border-top: 1px solid #eaeaea;
  padding-top: 15px;
  padding-bottom: 15px;
+ color: black;
 }
 .review-meta-details {
  border-top: 1px solid #eaeaea;
  margin-top: 15px;
+ color: black;
 }
 .review {
  margin-top: 0;
+ color: black;
 }
 .listing {
  list-style: none;
@@ -65,5 +70,9 @@ body{
   width: 50%;
   width: 400px;
   height: 400px;
-
 }
+
+.form-group {
+  color: black;
+}
+
