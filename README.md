@@ -26,7 +26,7 @@ Things you may want to cover:
 
 ## Screenshots
 
-![southandcentralamericanreads](southamericanreads.png)
+![screenshotsouthandcentralamericanreads](southamericanreads.png)
 ![signup](signup.png)
 ![login](login.png)
 ![seeallreviews](showallreviews.png)
