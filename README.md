@@ -28,6 +28,7 @@ Things you may want to cover:
 
 ![screenshotsouthandcentralamericanreads](southamericanreads.png)
 ![signup](signup.png)
+![about](about.png)
 ![login](login.png)
 ![seeallreviews](showallreviews.png)
 ![caribbeanreads](caribbeanreads.png)
