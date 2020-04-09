@@ -66,6 +66,18 @@ feature "HomePage" do
         expect(page).to have_link("About The Global Reading Project")
       end
 
+      scenario "Can see a link to Reviews" do 
+        visit "/"
+        expect(page).to have_link("Reviews")
+      end
+
+
+      scenario "Can see a link to Create Review" do 
+        visit "/"
+        expect(page).to have_link("Create Review")
+      end
+
+
 
       
   end
