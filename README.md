@@ -1,30 +1,36 @@
-# README
+# Global Reads
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About Global Reads
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## User Stories
 
 
-## Screenshots
+
+## How to run
+
+* Clone the project - git clone https://github.com/emilyjspencer/Global-Reads.git
+* cd into the repo 
+* Run bundle install
+* Type: rails s (to start the server)
+* Go to the following address in the browser: localhost:3000
+
+
+### How to run the tests
+
+* Type the following into the terminal: rspec
+
+## Built with
+
+* Ruby
+* Rails
+* HTML/CSS
+
+## Tested with
+
+* RSpec
+* Capybara
+
+## What it looks like 
 
 ![screenshotsouthandcentralamericanreads](southamericanreads.png)
 ![signup](signup.png)
