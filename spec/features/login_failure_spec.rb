@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "HomePage", type: :feature do 
+RSpec.feature "Login", type: :feature do 
   scenario "Login failure" do 
     visit "/"
     click_link "Log In"
