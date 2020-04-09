@@ -12,10 +12,11 @@
       
       <%= link_to "Global Reads", root_path, class: "navbar-brand", id: "logo" %>
       <%= link_to "Sign Up", signup_path, class: "navbar-brand" %>
-      <%= link_to "Log out", logout_path, method: :delete, class: "navbar-brand", id: "navbar-brand" %>
+      
       <%= link_to "Log In", login_path, class: "navbar-brand" %>
       <% if logged_in? %>
-        <% else %>
+        <%= link_to "Log out", logout_path, method: :delete, class: "navbar-brand", id: "navbar-brand" %>
+      <% else %>
       <% end %>
       
      
@@ -37,7 +38,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       <li><%= link_to "Reviews", reviews_path, class: "navbar-brand" %></li>
-      <li><%= link_to "Create Review", new_review_path, class: "navbar-brand" %></li>
+      <% if logged_in? %>
+        <li><%= link_to "Create Review", new_review_path, class: "navbar-brand" %></li>
+      <% else %>
+      <% end %>
         
       </ul>
       
