@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :user_credentials, only: [:show, :edit, :update]
+
     def new
       @user = User.new
     end
@@ -15,11 +17,9 @@ class UsersController < ApplicationController
     end
 
     def edit
-      @user = User.find(params[:id])
     end
 
     def update
-      @user = User.find(params[:id])
       if @user.update(user_credentials)
        flash[:success] = "Your account was successfully updated"
        redirect_to reviews_path
@@ -29,18 +29,23 @@ class UsersController < ApplicationController
      end
 
      def show
-      @user = User.find(params[:id])
       @user_reviews = @user.reviews.paginate(page: params[:page], per_page: 5)
      end
 
      def index
       @users = User.paginate(page: params[:page], per_page: 5)
-    end
+     end
 
 
     private
 
     def user_credentials
-        params.require(:user).permit(:username, :email, :password)
+      params.require(:user).permit(:username, :email, :password)
+      
     end 
+
+    def find_by_id
+      @user = User.find(params[:id])
+    end
+
 end
