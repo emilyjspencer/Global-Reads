@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   before_action :user_credentials, only: [:show, :edit, :update, :destroy]
-  before_action :require_admin, only [:destroy]
+  before_action :require_admin, only: [:destroy]
   before_action :require_same_user, only: [: destroy, :edit, :update]
 
     def new 
