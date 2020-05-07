@@ -23,7 +23,6 @@ Rails.application.routes.draw do
 
   get 'logout', to: 'sessions#destroy'
 
-  get 'users', to: 'users#show'
   
 
   resources :users, except: [:new]

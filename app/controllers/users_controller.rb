@@ -1,16 +1,29 @@
 class UsersController < ApplicationController
 
-  before_action :user_credentials, only: [:show, :edit, :update, :destroy]
+  before_action :user_params, only: [ :edit, :update, :destroy]
   before_action :require_admin, only: [:destroy]
   before_action :require_same_user, only: [:destroy, :edit, :update]
+
+
+    def index
+      @users = User.paginate(page: params[:page], per_page: 5)
+    end
+
+    def show
+      @user = find_user
+      @user_reviews = @user.reviews.paginate(page: params[:page], per_page: 5)
+     end
 
     def new 
       @user = User.new
     end
 
+    def edit
+    end
+
     def create
-        @user = User.new(user_credentials)
-       if @user.save
+      @user = User.new(user_params)
+        if @user.save
          session[:user_id] = @user.id
          flash[:success] = "Welcome to the Global Reads #{@user.username}"
          redirect_to user_path(@user)
@@ -19,24 +32,14 @@ class UsersController < ApplicationController
        end
     end
 
-    def edit
-    end
 
     def update
-      if @user.update(user_credentials)
+      if @user.update(user_params)
        flash[:success] = "Your account was successfully updated"
        redirect_to reviews_path
       else
        render 'edit'
       end
-     end
-
-     def show
-      @user_reviews = @user.reviews.paginate(page: params[:page], per_page: 5)
-     end
-
-     def index
-      @users = User.paginate(page: params[:page], per_page: 5)
      end
 
      def destroy
@@ -48,13 +51,13 @@ class UsersController < ApplicationController
 
     private
 
-    def user_credentials
-
+    def user_params
+    
       params.require(:user).permit(:username, :email, :password) 
     end 
 
-    def find_by_id
-      @user = User.find(params[:id])
+    def find_user
+      User.find(params[:id])
     end
 
     def require_admin
