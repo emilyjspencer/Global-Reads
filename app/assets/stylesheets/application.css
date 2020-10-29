@@ -93,6 +93,12 @@ ul {
     height: 400px;
 }
 
+.globe {
+    position: relative;
+    left: 530px;
+    width: 150px;
+    height: 150px;
+}
 .africanamericanbooks {
     display: flex;
     flex-direction : row;
