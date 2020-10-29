@@ -25,6 +25,11 @@
  font-size: 1.5em;
 }
 
+p {
+    color: black;
+    
+}
+
 
 .review-actions {
     color:  #ff66ff;
@@ -35,15 +40,172 @@
 }
 
 body {
-    background: linear-gradient(55deg, #ed65f2, #a6e9ea);
+    background: linear-gradient(105deg, rgb(184, 158, 201),
+    rgb(198, 214, 228), rgb(135, 194, 231), #C06C84);
 }
 
 container-fluid {
     background:  #c2d6d6;
 }
 
+li {
+    list-style-type: none;
+    color: black;
+    font-size: 16px;
+
+}
+
+ul {
+    color: black;
+    display: inline-block;
+}
+
+.northafricanbooks {
+    display: flex;
+    flex-direction: row;
+}
+
+.northafrican {
+    display: flex;
+    flex-direction: row;
+}
+
+.africa {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.llama {
+    display: flex;
+    flex-direction: row;
+}
+
+.chinese {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#mapcropped {
+    width: 600px;
+    height: 400px;
+}
+
+.africanamericanbooks {
+    display: flex;
+    flex-direction : row;
+
+}
+
+.salam {
+    display :flex;
+    flex-direction: row;
+}
+
+.paris {
+    display: flex;
+    flex-direction: row;
+}
+
+.berlin {
+    display: flex;
+    flex-direction: row;
+}
+
+.tajmahal {
+    display: flex;
+    flex-direction: row;
+}
+
+.africanamerican {
+    display: flex;
+    flex-direction: row;
+}
+
+.africanamerican2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.camel {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.palms {
+    display: flex;
+    flex-direction: row;
+   position: relative;
+   right: 20px;
+}
+
+.palms2 {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 350px;
+    position: relative;
+   left: 1000px;
+   bottom: 380px;
+}
+
+.bookscarribean {
+    display: table;
+    margin: 0 auto;
+   
+}
+
+.caribbeanimages {
+    position: relative;
+    bottom: 300px;
+}
+
+caribbean {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+}
+
+a:link {
+    color: rgb(25, 26, 25);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(37, 36, 36);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.icon-bar {
+    color: gray;
+}
+
+.sr-only {
+    color: gray;
+}
+
+.worldmap {
+    width: 1000px;
+    height: 1000px;
+
+
+}
+
+.wanderlust {
+    width: 1000px;
+    height: 600px;
+}
+
 navbar navbar-default {
-    background: #c2d6d6;;
+    background: #74a0a0;;
 }
 
 
@@ -56,3 +218,18 @@ ul {
     width: 175px;
     height: 200px;
   }
+
+#mapcircle {
+    width: 400px;
+    height: 400px;
+}
+
+.navbar-custom { 
+    background-color: rgb(92, 89, 89); 
+    color: black;
+} 
+
+#world {
+    width: 1000px;
+    height: 700px;
+}
